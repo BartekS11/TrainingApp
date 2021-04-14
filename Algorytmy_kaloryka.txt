@@ -8,7 +8,9 @@ Wskaźnik BMI wskazuje aktualny wspolczynnik:
  Legenda:
   weight-waga
   height-wzrost
-  bmi-Wskaźnik masy ciała, także wskaźnik Queteleta II – współczynnik powstały przez podzielenie masy ciała podanej w kilogramach przez kwadrat wysokości podanej w metrach. Klasyfikacja wskaźnika BMI została opracowana wyłącznie dla dorosłych i nie może być stosowana u dzieci.
+  bmi-Wskaźnik masy ciała, także wskaźnik Queteleta II – współczynnik powstały przez podzielenie masy ciała 
+  podanej w kilogramach przez kwadrat wysokości podanej w metrach. Klasyfikacja wskaźnika BMI 
+  została opracowana wyłącznie dla dorosłych i nie może być stosowana u dzieci.
  
 2.Obliczanie BMR:
 Zależne od płci:
@@ -23,12 +25,16 @@ Wzór na zapotrzebowanie białka:
 masa Twojego ciała x 0,90 g = dzienne zapotrzebowanie na białko w diecie
 
 Legenda:
-  bmr-Podstawowa przemiana materii (PPM) (ang. Basal metabolic rate) – najmniejsze tempo przemiany materii, zachodzącej w organizmie człowieka, niezbędne do podtrzymania podstawowych funkcji życiowych, znajdującego się w stanie czuwania, w warunkach zupełnego spokoju fizycznego i psychicznego, komfortu cieplnego, który na 12 godzin przed badaniem nie spożywał żadnych posiłków, po 3 dniach diety bezbiałkowej i po co najmniej 8 godzinach snu
+  bmr-Podstawowa przemiana materii (PPM) (ang. Basal metabolic rate) – najmniejsze tempo przemiany materii, 
+  zachodzącej w organizmie człowieka, niezbędne do podtrzymania podstawowych funkcji życiowych, znajdującego się w stanie czuwania, 
+  w warunkach zupełnego spokoju fizycznego i psychicznego, komfortu cieplnego, który na 12 godzin przed badaniem nie spożywał żadnych posiłków, 
+  po 3 dniach diety bezbiałkowej i po co najmniej 8 godzinach snu
   weight-waga
   height-wzrost
   age-wiek
 
-Powyższy wynik pomnóż przez współczynnik aktywności fizycznej (PAL), aby uzyskać całkowitą przemianę materii (CPM), czyli docelową ilość kalorii, które potrzebujesz każdego dnia. Aby prawidłowo określić swoje zapotrzebowanie, oszacuj codzienny wydatek energetyczny i wybierz właściwy współczynnik dla siebie.
+Powyższy wynik pomnóż przez współczynnik aktywności fizycznej (PAL), aby uzyskać całkowitą przemianę materii (CPM), czyli docelową ilość kalorii, 
+które potrzebujesz każdego dnia. Aby prawidłowo określić swoje zapotrzebowanie, oszacuj codzienny wydatek energetyczny i wybierz właściwy współczynnik dla siebie.
 
  
 
