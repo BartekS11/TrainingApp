@@ -19,6 +19,9 @@ bmr = 9.99 * weight + 6.25 * height - 4.92 * age - 161
 B) mężczyźni
 bmr = 9.99 * weight + 6.25 * height - 4.92 * age + 5
 
+Wzór na zapotrzebowanie białka:
+masa Twojego ciała x 0,90 g = dzienne zapotrzebowanie na białko w diecie
+
 Legenda:
   bmr-Podstawowa przemiana materii (PPM) (ang. Basal metabolic rate) – najmniejsze tempo przemiany materii, zachodzącej w organizmie człowieka, niezbędne do podtrzymania podstawowych funkcji życiowych, znajdującego się w stanie czuwania, w warunkach zupełnego spokoju fizycznego i psychicznego, komfortu cieplnego, który na 12 godzin przed badaniem nie spożywał żadnych posiłków, po 3 dniach diety bezbiałkowej i po co najmniej 8 godzinach snu
   weight-waga
