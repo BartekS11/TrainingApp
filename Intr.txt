@@ -1,0 +1,38 @@
+Aplikacja powstanie w technologii Java + Spring w wsparciu o Hibernate
+BAZA CHYBA POSTRESQL
+
+
+System będzie posiadał podział na role, takie jak trener personalny i podopieczny.
+
+Rola trenera ma zapewnić:
+
+- Dodanie treningu personalnego do kalendarza
+- Dostęp do notatek z postępami danego podopiecznego
+- Tworzenie planu treningowego
+
+Rola podopiecznego ma zapewnić:
+
+-Dodanie parametrów takich jak: wiek, waga, płeć , wzrost
+- Mozliwosc obliczenia zapotrzebowania kalorycznego
+- Mozliwosc obliczenia BMI
+- Tworzenie notatek do konkretnego treningu
+- Utworzenie tabeli dla poszczególnych ćwiczeń i uzupełnianie ich o wartość ciężaru, który został użyty.
+- 
+
+
+
+W PLANACH JESZCZE ZROBIC ZESPOL NA ASANIE
+
+
+MACH
+ZEBY HEAD SIE POJAWIL
+
+BEDZIE CHCIAL WIDZIEC PO STRONIE BACKENMDOWEJ ZA POMOCA SWAGGER API JAKIE BEDA POWSTAWALY
+
+NA NASTEPNE GITHUB I trello I JAKIES POLACZENIE BAZY DANYCH
+
+
+Przygotowanie Trello do lepszej organizacji czasu.
+Zebranie i posegregowanie listy ćwiczeń, które beda dostepne w aplikacji.
+Skompletowanie algorytmow do obliczania zapotrzebowania kalorycznosci.
+Utworzenie podstawowych klas aplikacji w celu zrobienia fundamentow wiesz o co chodzi
