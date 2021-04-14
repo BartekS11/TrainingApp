@@ -27,3 +27,31 @@ Legenda:
   weight-waga
   height-wzrost
   age-wiek
+
+Powyższy wynik pomnóż przez współczynnik aktywności fizycznej (PAL), aby uzyskać całkowitą przemianę materii (CPM), czyli docelową ilość kalorii, które potrzebujesz każdego dnia. Aby prawidłowo określić swoje zapotrzebowanie, oszacuj codzienny wydatek energetyczny i wybierz właściwy współczynnik dla siebie.
+
+ 
+
+1,2 – 1,3 – Twoja aktywność wygląda: dom-samochód - praca – samochód - dom
+
+1,4 – wykonujesz pracę siedzącą, nie masz dodatkowej aktywności w tygodniu, starasz się chodzić w ciągu dnia
+
+1,5  - 1,6 – wykonujesz pracę siedzącą i 2-3 dodatkowe treningi w tygodniu
+
+1,7 – 1,8 – wykonujesz pracę fizyczną i brak dodatkowego treningu lub siedzącą i 4-5 dodatkowych treningów
+
+1,9 – 2,1 – wykonujesz pracę fizyczną i 2-3 treningi w tygodniu lub pracę siedzącą i trenujesz codziennie
+
+>2,2 – wykonujesz ciężką pracę fizyczną lub bardzo intensywnie trenujesz
+
+ 
+
+PRZYKŁAD: 
+
+-Kobieta w wieku 24 lata ważąca 57 kg, o wzroście 163 cm ma podstawową przemianą materii równą 1308 kcal.
+
+-Pracuje na siedząco, ale do pracy i z pracy idzie łącznie 40 min.,  trenuje 4 razy w tygodniu przez godzinę.
+
+-Wynik PPM mnożymy więc  x 1,7.
+
+-Jej całkowita przemiana materii (CPM) wynosi więc 1308 x 1,7 = 2234 kcal
