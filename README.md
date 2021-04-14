@@ -1,2 +1,2 @@
-# TrainingApp
-Project of Training app
+ # ***TrainingApp***
+> `Aplikacja do ustawiania treningów personalnych`
