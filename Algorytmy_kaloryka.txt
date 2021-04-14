@@ -1,1 +1,26 @@
+1.Obliczanie BMI:
+bmi = weight / (height / 100)^2)
 
+Wskaźnik BMI wskazuje aktualny wspolczynnik:
+  bmi>=25-nadwaga
+  bmi>18-wspolczynnik w normie
+  reszta-niedowaga
+ Legenda:
+  weight-waga
+  height-wzrost
+  bmi-Wskaźnik masy ciała, także wskaźnik Queteleta II – współczynnik powstały przez podzielenie masy ciała podanej w kilogramach przez kwadrat wysokości podanej w metrach. Klasyfikacja wskaźnika BMI została opracowana wyłącznie dla dorosłych i nie może być stosowana u dzieci.
+ 
+2.Obliczanie BMR:
+Zależne od płci:
+
+a) kobiety
+bmr = 9.99 * weight + 6.25 * height - 4.92 * age - 161
+
+B) mężczyźni
+bmr = 9.99 * weight + 6.25 * height - 4.92 * age + 5
+
+Legenda:
+  bmr-Podstawowa przemiana materii (PPM) (ang. Basal metabolic rate) – najmniejsze tempo przemiany materii, zachodzącej w organizmie człowieka, niezbędne do podtrzymania podstawowych funkcji życiowych, znajdującego się w stanie czuwania, w warunkach zupełnego spokoju fizycznego i psychicznego, komfortu cieplnego, który na 12 godzin przed badaniem nie spożywał żadnych posiłków, po 3 dniach diety bezbiałkowej i po co najmniej 8 godzinach snu
+  weight-waga
+  height-wzrost
+  age-wiek
