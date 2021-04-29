@@ -10,6 +10,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import pl.seafta.service.AccountService;
 
 @Configuration
@@ -18,7 +19,7 @@ import pl.seafta.service.AccountService;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final AccountService accountService;
-    private final BCryptPasswordEncoder bCryptPasswordEncoder;
+    private final PasswordEncoder passwordEncoder;
 
     protected void configure(HttpSecurity http) throws Exception {
         http
@@ -38,8 +39,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public DaoAuthenticationProvider daoAuthenticationProvider() {
         DaoAuthenticationProvider provider =
                 new DaoAuthenticationProvider();
-        provider.setPasswordEncoder(bCryptPasswordEncoder);
+        provider.setPasswordEncoder(passwordEncoder);
         provider.setUserDetailsService(accountService);
         return provider;
     }
+
+
 }

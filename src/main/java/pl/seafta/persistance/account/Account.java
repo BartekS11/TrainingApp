@@ -19,8 +19,16 @@ import java.util.Collections;
 @Entity
 public class Account implements UserDetails {
 
+    @SequenceGenerator(
+            name = "student_sequence",
+            sequenceName = "student_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "student_sequence"
+    )
     @Id
-    @GeneratedValue
     private Long id;
     private String firstName;
     private String lastName;
@@ -41,7 +49,12 @@ public class Account implements UserDetails {
         this.enabled = enabled;
     }
 
-    public Account(String firstName, String lastName, String email, String password, AccountRole user) {
+    public Account(String firstName, String lastName, String email, String password, AccountRole accountRole) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.accountRole = accountRole;
     }
 
     @Override

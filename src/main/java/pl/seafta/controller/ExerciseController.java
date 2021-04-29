@@ -14,12 +14,12 @@ import pl.seafta.service.ExerciseService;
 public class ExerciseController {
     private final ExerciseService exerciseService;
 
-    @PostMapping("/exercise")
+    @PostMapping("/Account/exercise")
     public Exercise addExercise(@RequestBody Exercise exercise) {
         return exerciseService.createExercise(exercise);
     }
 
-    @GetMapping("/getAllExercises")
+    @GetMapping("Account/getAllExercises")
     public java.util.List<Exercise> getAll() {
         return exerciseService.getAllExercises();
     }
