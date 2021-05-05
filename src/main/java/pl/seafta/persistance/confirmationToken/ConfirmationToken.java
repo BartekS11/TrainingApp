@@ -1,4 +1,4 @@
-package pl.seafta.persistance.ConfirmationToken;
+package pl.seafta.persistance.confirmationToken;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
