@@ -1,10 +1,10 @@
-package pl.seafta.persistance.ConfirmationToken.repository;
+package pl.seafta.persistance.confirmationToken.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import pl.seafta.persistance.ConfirmationToken.ConfirmationToken;
+import pl.seafta.persistance.confirmationToken.ConfirmationToken;
 
 import javax.transaction.Transactional;
 import java.time.LocalDateTime;

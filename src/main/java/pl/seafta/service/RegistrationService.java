@@ -2,7 +2,7 @@ package pl.seafta.service;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import pl.seafta.persistance.ConfirmationToken.ConfirmationToken;
+import pl.seafta.persistance.confirmationToken.ConfirmationToken;
 import pl.seafta.persistance.account.Account;
 import pl.seafta.persistance.account.AccountRequest;
 import pl.seafta.persistance.account.AccountRole;

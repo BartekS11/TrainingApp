@@ -1,0 +1,44 @@
+
+body {
+    background-image: url("home.png");
+    background-size: 100%;
+    background-position-y: -20px;
+    background-repeat: no-repeat;
+}
+
+button.login {
+
+    font-size: 15px;
+    height: 55px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to left, #9d46b8, #de67a3);
+    color: white;
+    font-weight: bolder;
+    margin-top: 700px;
+    margin-left: 200px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+button.registration {
+
+    font-size: 15px;
+    height: 55px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to left, #030b50, #1b37e5);
+    color: white;
+    font-weight: bolder;
+    margin-top: 700px;
+    margin-left: 200px;
+    cursor: pointer;
+    outline: none;
+}
+
+a {
+    color: white;
+}
