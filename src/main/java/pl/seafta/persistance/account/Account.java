@@ -9,6 +9,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Collection;
 import java.util.Collections;
 
@@ -17,6 +18,7 @@ import java.util.Collections;
 @EqualsAndHashCode
 @NoArgsConstructor
 @Entity
+@Table(name = "accounts")
 public class Account implements UserDetails {
 
     @SequenceGenerator(
@@ -30,10 +32,15 @@ public class Account implements UserDetails {
     )
     @Id
     private Long id;
+
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "account")
+    private AccountDetails accountDetails = null;
     private String firstName;
     private String lastName;
     private String email;
+    @NotNull
     private String password;
+
     @Enumerated(EnumType.STRING)
     private AccountRole accountRole;
     private Boolean locked = false;

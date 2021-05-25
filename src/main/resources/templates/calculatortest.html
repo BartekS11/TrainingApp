@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html xmlns:th="http://thymeleaf.org" lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>SEAFTA LOGIN PAGE</title>
+
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+</head>
+
+<body>
+
+            <form action="#" th:action="@{/calculatortest}" th:object="${accountDetails}" method="post">
+                <div class="form-group">
+                    <label class="control-label" for="sex"> Sex </label>
+                    <input id="sex" class="form-control" th:field="*{sex}" type="number"
+                           required autofocus="autofocus" />
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="height"> Height </label> <input
+                        id="height" class="form-control" th:field="*{height}" type="number"
+                        required autofocus="autofocus" />
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="weight"> Weight </label> <input
+                        id="weight" class="form-control" th:field="*{weight}" type="number" required
+                        autofocus="autofocus" />
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="age"> Age </label> <input
+                        id="age" class="form-control" type="number"
+                        th:field="*{age}" required autofocus="autofocus" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="activity"> Activity </label> <input
+                        id="activity" class="form-control" type="number"
+                        th:field="*{activity}" required autofocus="autofocus" />
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Register</button>
+                </div>
+            </form>
+<nav role="navigation">
+    <div id="menuToggle">
+
+        <input type="checkbox" />
+
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+            <a href="/account"><li>Home</li></a>
+            <a href="/calculate"><li>Calculate</li></a>
+            <a href="/exercise"><li>Exercise</li></a>
+            <a href="/progress"><li>Notebook</li></a>
+            <a href="/mailbox"><li>Mailbox</li></a>
+        </ul>
+    </div>
+</nav>
+<div class='bold-line'></div>
+<div class='container'>
+</div>
+</div>
+</body>
+</html>
