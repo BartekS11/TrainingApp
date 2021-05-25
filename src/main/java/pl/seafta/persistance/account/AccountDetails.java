@@ -5,18 +5,18 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "account_details")
 public class AccountDetails {
 
     @Id
-    private Long Id;
+    private Long id;
     private String sex;
     private double height;
     private double weight;
@@ -25,4 +25,7 @@ public class AccountDetails {
     private double cpm;
     private double bmi;
     private double bmr;
+    @OneToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "account_id", nullable = false)
+    private Account account;
 }

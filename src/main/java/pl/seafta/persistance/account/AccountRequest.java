@@ -2,13 +2,17 @@ package pl.seafta.persistance.account;
 
 import lombok.*;
 
+import javax.validation.constraints.NotNull;
+
 @Getter
 @AllArgsConstructor
 @EqualsAndHashCode
 @ToString
+@NoArgsConstructor
 public class AccountRequest {
-    private final String firstName;
-    private final String lastName;
-    private final String email;
-    private final String password;
+    private  String firstName;
+    private  String lastName;
+    private  String email;
+    @NotNull
+    private  String password;
 }

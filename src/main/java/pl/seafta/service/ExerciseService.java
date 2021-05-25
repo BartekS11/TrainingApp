@@ -14,8 +14,6 @@ public class ExerciseService {
 
     private final ExerciseRepository exerciseRepository;
 
-
-
     public Exercise createExercise(Exercise exercise) {
         return exerciseRepository.save(exercise);
     }

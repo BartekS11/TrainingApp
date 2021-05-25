@@ -1,10 +1,303 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US"  class="supernova"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="og:title" content="BMI Calculator" >
+    <meta name="slack-app-id" content="AHNMASS8M">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>BMI Calculator</title>
+    <link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.25403" />
+    <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5f30e2a790832f3e96009402"/>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.25403" />
+    <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.25403" />
+    <link rel="stylesheet" href="css/hamburger.css">
+    <style type="text/css" id="form-designer-style">
+
+        body {
+        }
+        .form-all {
+            font-family: Inter, sans-serif;
+        }
+        .form-all .qq-upload-button,
+        .form-all .form-submit-button,
+        .form-all .form-submit-reset,
+        .form-all .form-submit-print {
+            font-family: Inter, sans-serif;
+        }
+        .form-all .form-pagebreak-back-container,
+        .form-all .form-pagebreak-next-container {
+            font-family: Inter, sans-serif;
+        }
+        .form-header-group {
+            font-family: Inter, sans-serif;
+        }
+        .form-label {
+            font-family: Inter, sans-serif;
+        }
+
+
+
+        .form-line {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        .form-all {
+            max-width: 752px;
+            width: 100%;
+        }
+
+        .form-label.form-label-left,
+        .form-label.form-label-right,
+        .form-label.form-label-left.form-label-auto,
+        .form-label.form-label-right.form-label-auto {
+            width: 230px;
+        }
+
+        .form-all {
+            font-size: 16px
+        }
+        .form-all .qq-upload-button,
+        .form-all .qq-upload-button,
+        .form-all .form-submit-button,
+        .form-all .form-submit-reset,
+        .form-all .form-submit-print {
+            font-size: 16px
+        }
+        .form-all .form-pagebreak-back-container,
+        .form-all .form-pagebreak-next-container {
+            font-size: 16px
+        }
+
+        .supernova .form-all, .form-all {
+            background-color: #fff;
+            border: 1px solid transparent;
+        }
+
+        .form-all {
+            color: #2C3345;
+        }
+        .form-header-group .form-header {
+            color: #2C3345;
+        }
+        .form-header-group .form-subHeader {
+            color: #2C3345;
+        }
+        .form-label-top,
+        .form-label-left,
+        .form-label-right,
+        .form-html,
+        .form-checkbox-item label,
+        .form-radio-item label {
+            color: #2C3345;
+        }
+        .form-sub-label {
+            color: #464d5f;
+        }
+
+        .supernova {
+            background-color: #02082a;
+        }
+        .supernova body {
+        }
+
+        .form-textbox,
+        .form-textarea,
+        .form-dropdown,
+        .form-radio-other-input,
+        .form-checkbox-other-input,
+        .form-captcha input,
+        .form-spinner input {
+            background-color: #fff;
+        }
+
+        .supernova {
+            height: 100%;
+            background-repeat: repeat;
+            background-attachment: scroll;
+            background-position: center top;
+        }
+        .supernova {
+            background: url(static/images/tlo.png);
+        }
+        #stage {
+            background: url(static/images/tlo.png);
+        }
+
+        .form-all {
+            background: none;
+        }
+
+        .ie-8 .form-all:before { display: none; }
+        .ie-8 {
+            margin-top: auto;
+            margin-top: initial;
+        }
+
+        .form-label.form-label-auto {
+
+            display: block;
+            float: none;
+            text-align: left;
+            width: 100%;
+
+        }
+    </style>
 </head>
 <body>
-<p> th:text = "${cpm}"</p>
-</body>
+<nav role="navigation">
+    <div id="menuToggle">
+
+        <input type="checkbox" />
+
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+            <a href="/account"><li>Home</li></a>
+            <a href="/calculator"><li>Calculate</li></a>
+            <a href="/exercise"><li>Exercise</li></a>
+            <a href="/progress"><li>Notebook</li></a>
+            <a href="/mailbox"><li>Mailbox</li></a>
+        </ul>
+    </div>
+</nav>
+<form class="jotform-form" action="/calculator" method="post"accept-charset="utf-8" autocomplete="on">
+    <input type="hidden" name="formID" value="211315345367351" />
+    <input type="hidden" id="JWTContainer" value="" />
+    <input type="hidden" id="cardinalOrderNumber" value="" />
+    <div role="main" class="form-all">
+        <ul class="form-section page-section">
+            <li id="cid_1" class="form-input-wide" data-type="control_head">
+                <div class="form-header-group  header-large">
+                    <div class="header-text httac htvam">
+                        <h1 id="header_1" class="form-header" data-component="header">
+                            BMI Calculator
+                        </h1>
+                        <div id="subHeader_1" class="form-subHeader">
+                            SEAFTA
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_radio" id="id_5">
+                <label class="form-label form-label-top form-label-auto" id="label_5">
+                    Gender
+                    <span class="form-required">
+            *
+          </span>
+                </label>
+                <div id="cid_5" class="form-input-wide jf-required" data-layout="full">
+                    <div class="form-multiple-column" data-columncount="2" role="group" aria-labelledby="label_5" data-component="radio">
+            <span class="form-radio-item">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio validate[required]" id="input_5_0" name="q5_gender" value="Male" required="" />
+              <label id="label_input_5_0" for="input_5_0"> Male </label>
+            </span>
+                        <span class="form-radio-item">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio validate[required]" id="input_5_1" name="q5_gender" value="Female" required="" />
+              <label id="label_input_5_1" for="input_5_1"> Female </label>
+            </span>
+                    </div>
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_number" id="id_6">
+                <label class="form-label form-label-top form-label-auto" id="label_6" for="input_6">
+                    Age
+                    <span class="form-required">
+            *
+          </span>
+                </label>
+                <div id="cid_6" class="form-input-wide jf-required" data-layout="half">
+                    <input type="number" id="input_6" name="q6_age" data-type="input-number" class=" form-number-input form-textbox validate[required]" style="width:310px" size="310" value="" placeholder="ex: 23" data-component="number" aria-labelledby="label_6" required="" step="any" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_number" id="id_7">
+                <label class="form-label form-label-top form-label-auto" id="label_7" for="input_7">
+                    Height (cm)
+                    <span class="form-required">
+            *
+          </span>
+                </label>
+                <div id="cid_7" class="form-input-wide jf-required" data-layout="half">
+                    <input type="number" id="input_7" name="q7_heightin" data-type="input-number" class=" form-number-input form-textbox validate[required]" style="width:310px" size="310" value="" placeholder="ex: 72" data-component="number" aria-labelledby="label_7" required="" step="any" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_number" id="id_8">
+                <label class="form-label form-label-top form-label-auto" id="label_8" for="input_8">
+                    Weight (kg)
+                    <span class="form-required">
+            *
+          </span>
+                </label>
+                <div id="cid_8" class="form-input-wide jf-required" data-layout="half">
+                    <input type="number" id="input_8" name="q8_weightlb" data-type="input-number" class=" form-number-input form-textbox validate[required]" style="width:310px" size="310" value="" placeholder="ex: 198" data-component="number" aria-labelledby="label_8" required="" step="any" />
+                </div>
+            </li>
+            <li class="form-line" data-type="control_radio" id="id_27">
+                <label class="form-label form-label-top form-label-auto" id="label_27" for="input_27"> Activity </label>
+                <div id="cid_27" class="form-input-wide" data-layout="full">
+                    <div class="form-single-column" role="group" aria-labelledby="label_27" data-component="radio">
+            <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio" id="input_27_0" name="q27_activity" value="1,2 -Twoja aktywność wygląda: dom-samochód - praca – samochód - dom" data-calcvalue="1.2" />
+              <label id="label_input_27_0" for="input_27_0"> 1,2 -Twoja aktywność wygląda: dom-samochód - praca – samochód - dom </label>
+            </span>
+                        <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio" id="input_27_1" name="q27_activity" value="1,4 - wykonujesz pracę siedzącą, nie masz dodatkowej aktywności w tygodniu, starasz się chodzić w ciągu dnia" data-calcvalue="1.4" />
+              <label id="label_input_27_1" for="input_27_1"> 1,4 - wykonujesz pracę siedzącą, nie masz dodatkowej aktywności w tygodniu, starasz się chodzić w ciągu dnia </label>
+            </span>
+                        <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio" id="input_27_2" name="q27_activity" value="1,5 - wykonujesz pracę siedzącą i 2-3 dodatkowe treningi w tygodniu" data-calcvalue="1.5" />
+              <label id="label_input_27_2" for="input_27_2"> 1,5 - wykonujesz pracę siedzącą i 2-3 dodatkowe treningi w tygodniu </label>
+            </span>
+                        <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio" id="input_27_3" name="q27_activity" value="1,7 - wykonujesz pracę fizyczną i brak dodatkowego treningu lub siedzącą i 4-5 dodatkowych treningów" data-calcvalue="1.7" />
+              <label id="label_input_27_3" for="input_27_3"> 1,7 - wykonujesz pracę fizyczną i brak dodatkowego treningu lub siedzącą i 4-5 dodatkowych treningów </label>
+            </span>
+                        <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio" id="input_27_4" name="q27_activity" value="1,9 - wykonujesz pracę fizyczną i 2-3 treningi w tygodniu lub pracę siedzącą i trenujesz codziennie" data-calcvalue="1.9" />
+              <label id="label_input_27_4" for="input_27_4"> 1,9 - wykonujesz pracę fizyczną i 2-3 treningi w tygodniu lub pracę siedzącą i trenujesz codziennie </label>
+            </span>
+                        <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio" id="input_27_5" name="q27_activity" value="2,2 - wykonujesz ciężką pracę fizyczną lub bardzo intensywnie trenujesz" data-calcvalue="2.2" />
+              <label id="label_input_27_5" for="input_27_5"> 2,2 - wykonujesz ciężką pracę fizyczną lub bardzo intensywnie trenujesz </label>
+            </span>
+                    </div>
+                </div>
+            </li>
+            <li class="form-line" data-type="control_divider" id="id_19">
+                <div id="cid_19" class="form-input-wide" data-layout="full">
+                    <div data-component="divider" style="border-bottom:1px solid #e6e6e6;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px">
+                    </div>
+                </div>
+            </li>
+            <li class="form-line" data-type="control_button" id="id_2">
+                <div id="cid_2" class="form-input-wide" data-layout="full">
+                    <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+                        <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</form></body>
 </html>

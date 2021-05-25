@@ -5,8 +5,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import pl.seafta.persistance.account.AccountDetails;
 import pl.seafta.service.CalculatorService;
 
@@ -16,13 +16,14 @@ public class CalculatorController {
 
     private final CalculatorService calculatorService;
 
-    @GetMapping("Account/calculator")
-    public String calculatorPage() {
+    @GetMapping("calculator")
+    public String calculatorPage(Model model) {
+        model.addAttribute("accountDetails", new AccountDetails());
         return "calculator";
     }
 
-    @PostMapping("Account/calculator")
-    public String calculator(@RequestBody AccountDetails accountDetails) {
+    @PostMapping("calculator")
+    public String calculator(@ModelAttribute("accountDetails") AccountDetails accountDetails) {
         return calculatorService.calculate(accountDetails);
     }
 

@@ -16,6 +16,7 @@ public class CalculatorService {
     public String calculate(@NotNull AccountDetails accountDetails) {
         double bmr;
         double cpm;
+        double bmi;
 
         if(accountDetails.getSex().equals("FEMALE"))
             bmr = 9.99 * accountDetails.getWeight() + 6.25 * accountDetails.getHeight() - 4.92 * accountDetails.getAge() - 161;
@@ -26,6 +27,9 @@ public class CalculatorService {
 
         cpm = bmr * accountDetails.getActivity();
         accountDetails.setCpm(cpm);
+
+        bmi = accountDetails.getWeight() / Math.sqrt(accountDetails.getHeight() / 100);
+        accountDetails.setBmi(bmi);
 
         accountDetailsRepository.save(accountDetails);
 
