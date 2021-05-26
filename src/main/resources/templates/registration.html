@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html xmlns:th="http://thymeleaf.org" lang="en">
 <head>
     <meta charset="utf-8">
 
@@ -19,12 +19,14 @@
             <div class='welcome'>Hello there!</div>
             <div class='subtitle'></div>
             <div class='input-fields'>
-                <input type='text' placeholder='Username' class='input-line full-width'></input>
-                <input type='email' placeholder='Email' class='input-line full-width'></input>
-                <input type='password' placeholder='Password' class='input-line full-width'></input>
-
+                <form method="post" th:action="@{/registration}" th:object="${request}">
+                <input type='text' th:field="*{firstName}" placeholder='firstName' class='input-line full-width'></input>
+                    <input type='text' th:field="*{lastName}" placeholder='lastName' class='input-line full-width'></input>
+                <input type='email' th:field="*{email}" placeholder='Email' class='input-line full-width'></input>
+                <input type='password' th:field="*{password}" placeholder='Password' class='input-line full-width'></input>
+                <input type='submit' value='Create Account' class ='ghost-round full-width'>
+                </form>
             </div>
-            <div><button class='ghost-round full-width'>Create Account</button></div>
         </div>
     </div>
 </div>

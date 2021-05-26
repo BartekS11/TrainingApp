@@ -33,8 +33,6 @@ public class Account implements UserDetails {
     @Id
     private Long id;
 
-    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "account")
-    private AccountDetails accountDetails = null;
     private String firstName;
     private String lastName;
     private String email;

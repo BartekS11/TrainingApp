@@ -29,11 +29,15 @@
 
 <div class='bold-line'></div>
 <div class='container'>
-    <tr th:each="exercise: ${exercises}">
-        <div class ="exercise">
-            <td class = "exercise"  th:text = "${exercise.getName}"/><br>
+    <div class = "container_table">
+    <table>
+        <th:block th:each="exercise: ${exercises}">
+            <tr>
+                <td class = "exercise" onlick  th:text = "${exercise.getName}"/>
+            </tr>
+        </th:block>
+    </table>
         </div>
-    </tr>
 </div>
 </div>
 </body>
