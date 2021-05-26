@@ -16,16 +16,18 @@ public class RegistrationController {
     private final RegistrationService registrationService;
 
 
-    @GetMapping("registration")
+    @GetMapping("/registration")
     public String registrationPage(Model model) {
+        model.addAttribute("request", new AccountRequest());
         return "registration";
     }
 
 
-    @PostMapping("registration")
-    public String register(@RequestBody AccountRequest request) {
+    @PostMapping("/registration")
+    public String register(@ModelAttribute(value ="request") AccountRequest request) {
+        System.out.println(request.getPassword() + "elo");
         registrationService.register(request);
-        return "registration";
+        return "redirect:/login";
     }
 
     @GetMapping(path = "registration/confirm")

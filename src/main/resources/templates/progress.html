@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" lang="en">
+<head>
+  <link rel="stylesheet" href="css/registration.css">
+  <link rel="stylesheet" href="css/hamburger.css">
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<nav role="navigation">
+  <div id="menuToggle">
+
+    <input type="checkbox" />
+
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <ul id="menu">
+      <a href="/account"><li>Home</li></a>
+      <a href="/calculator"><li>Calculate</li></a>
+      <a href="/exercise"><li>Exercise</li></a>
+      <a href="/progress"><li>Notebook</li></a>
+      <a href="/mailbox"><li>Mailbox</li></a>
+    </ul>
+  </div>
+</nav>
+
+<div class='bold-line'></div>
+<div class='container'>
+  <div class = "container_table">
+    <table>
+      <th:block th:each="exercise: ${exercises}">
+        <tr>
+          <td class = "exercise"  th:text = "${exercise.getName}"/>
+        </tr>
+      </th:block>
+    </table>
+  </div>
+</div>
+</div>
+</body>
+</html>

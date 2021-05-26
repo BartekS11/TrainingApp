@@ -16,6 +16,7 @@ import javax.persistence.*;
 public class AccountDetails {
 
     @Id
+    @GeneratedValue
     private Long id;
     private String sex;
     private double height;
@@ -25,7 +26,4 @@ public class AccountDetails {
     private double cpm;
     private double bmi;
     private double bmr;
-    @OneToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "account_id", nullable = false)
-    private Account account;
 }

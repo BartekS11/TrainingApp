@@ -12,40 +12,6 @@
 
 <body>
 
-            <form action="#" th:action="@{/calculatortest}" th:object="${accountDetails}" method="post">
-                <div class="form-group">
-                    <label class="control-label" for="sex"> Sex </label>
-                    <input id="sex" class="form-control" th:field="*{sex}" type="number"
-                           required autofocus="autofocus" />
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label" for="height"> Height </label> <input
-                        id="height" class="form-control" th:field="*{height}" type="number"
-                        required autofocus="autofocus" />
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label" for="weight"> Weight </label> <input
-                        id="weight" class="form-control" th:field="*{weight}" type="number" required
-                        autofocus="autofocus" />
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label" for="age"> Age </label> <input
-                        id="age" class="form-control" type="number"
-                        th:field="*{age}" required autofocus="autofocus" />
-                </div>
-                <div class="form-group">
-                    <label class="control-label" for="activity"> Activity </label> <input
-                        id="activity" class="form-control" type="number"
-                        th:field="*{activity}" required autofocus="autofocus" />
-                </div>
-
-                <div class="form-group">
-                    <button type="submit" class="btn btn-success">Register</button>
-                </div>
-            </form>
 <nav role="navigation">
     <div id="menuToggle">
 
@@ -67,6 +33,52 @@
 </nav>
 <div class='bold-line'></div>
 <div class='container'>
+    <div class = "formCalculator">
+        <form action="#" th:action="@{/calculatortest}" th:object="${accountDetails}" method="post">
+            <label class="field field_v1">
+            <input type='text' class="field__input" th:field="*{sex}" placeholder='Sex'></input></br>
+                <span class="field__label-wrap">
+                    <span class="field__label">Sex</span>
+                </span>
+            </label>
+            <label class="field field_v1">
+            <input type='number' class="field__input" th:field="*{height}" placeholder='Height'></input></br>
+                <span class="field__label-wrap">
+                    <span class="field__label">Height</span>
+                </span>
+            </label>
+            <label class="field field_v1">
+            <input type='number' class="field__input" th:field="*{weight}" placeholder='Weight'></input></br>
+                <span class="field__label-wrap">
+                    <span class="field__label">Weight</span>
+                </span>
+            </label>
+            <label class="field field_v1">
+            <input type='number' class="field__input" th:field="*{age}" placeholder='Age'></input></br>
+                <span class="field__label-wrap">
+                    <span class="field__label">Age</span>
+                </span>
+            </label>
+            <label class="field field_v1">
+            <input type='number' class="field__input" min="1.2" max="1.7" step="any" th:field="*{activity}" placeholder='Activity'></input></br>
+                <span class="field__label-wrap">
+                    <span class="field__label">Activity</span>
+                </span>
+            </label>
+            <input type='submit' class="field_submit" value='Calculate'>
+        </form>
+        <p>1,2 – 1,3 – Twoja aktywność wygląda: dom-samochód - praca – samochód - dom</p>
+
+        <p>1,4 – wykonujesz pracę siedzącą, nie masz dodatkowej aktywności w tygodniu, starasz się chodzić w ciągu dnia</p>
+
+        <p>1,5  - 1,6 – wykonujesz pracę siedzącą i 2-3 dodatkowe treningi w tygodniu</p>
+
+        <p>1,7 – 1,8 – wykonujesz pracę fizyczną i brak dodatkowego treningu lub siedzącą i 4-5 dodatkowych treningów</p>
+
+        <p>1,9 – 2,1 – wykonujesz pracę fizyczną i 2-3 treningi w tygodniu lub pracę siedzącą i trenujesz codziennie</p>
+
+        <p><2,2 – wykonujesz ciężką pracę fizyczną lub bardzo intensywnie trenujesz</p>
+    </div>
 </div>
 </div>
 </body>
