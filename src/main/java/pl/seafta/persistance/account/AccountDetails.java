@@ -4,8 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import pl.seafta.persistance.exercise.Exercise;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
@@ -17,6 +20,7 @@ public class AccountDetails {
 
     @Id
     @GeneratedValue
+    @Column(name ="id_details")
     private Long id;
     private String sex;
     private double height;
