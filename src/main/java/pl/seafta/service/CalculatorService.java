@@ -28,7 +28,7 @@ public class CalculatorService {
         cpm = bmr * accountDetails.getActivity();
         accountDetails.setCpm(Math.round(cpm));
 
-        bmi = accountDetails.getWeight() / Math.sqrt(accountDetails.getHeight() / 100);
+        bmi = (accountDetails.getHeight() / Math.sqrt(accountDetails.getWeight())+5);
         accountDetails.setBmi(Math.round(bmi));
 
         accountDetailsRepository.save(accountDetails);

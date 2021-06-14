@@ -19,7 +19,7 @@
             <div class='welcome'>Hello there!</div>
             <div class='subtitle'></div>
             <div class='input-fields'>
-                <form method="post" th:action="@{/registration}" th:object="${request}">
+                <form class ="registration" method="post" th:action="@{/registration}" th:object="${request}">
                 <input type='text' th:field="*{firstName}" placeholder='firstName' class='input-line full-width'></input>
                     <input type='text' th:field="*{lastName}" placeholder='lastName' class='input-line full-width'></input>
                 <input type='email' th:field="*{email}" placeholder='Email' class='input-line full-width'></input>

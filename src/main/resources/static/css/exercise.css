@@ -200,17 +200,7 @@ div.container_table {
     height: 1180px;
     margin-top: 155px;
 }
-div.dzialaj {
-    font-size:28px;
-    margin-left:20px;
-    text-align: center;
-}
-input {
-    font-size: 30px;
-}
-div.submit {
-    margin-left:920px;
-}
+
 table {
     width:1900px;
     height:200px;

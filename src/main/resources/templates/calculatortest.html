@@ -34,7 +34,7 @@
 <div class='bold-line'></div>
 <div class='container'>
     <div class = "formCalculator">
-        <form action="#" th:action="@{/calculatortest}" th:object="${accountDetails}" method="post">
+        <form class ="calculator" action="#" th:action="@{/calculatortest}" th:object="${accountDetails}" method="post">
             <label class="field field_v1">
             <input type='text' class="field__input" th:field="*{sex}" placeholder='Sex'></input></br>
                 <span class="field__label-wrap">

@@ -1,6 +1,8 @@
 package pl.seafta.persistance.exercise;
 
 import lombok.*;
+import pl.seafta.persistance.account.AccountDetails;
+import pl.seafta.persistance.account.NotebookExercise;
 
 import javax.persistence.*;
 
@@ -11,6 +13,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
+@Table(name = "exercise")
 public class Exercise {
 
     @Id
